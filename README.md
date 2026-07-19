@@ -1,7 +1,6 @@
 # AIAE01 Python Data Ptocessing and Analysis 20260720
 * [電子版講義網址](https://doc.sagedaben.com/AIAE01)
-* [今天的程式碼網址](https://github.com/idben/* [今天的程式碼網址](https://github.com/idben/AIAE01_20260720)
-)
+* [今天的程式碼網址](https://github.com/idben/AIAE01_20260720)
 * [資料處理與分析中預計的練習作業](https://drive.google.com/drive/folders/1DobiNG7YAwtd5b7w_KPVZheQwMFbHIVW?usp=sharing)
 * [python 進階課程操作練習的所有答案](https://drive.google.com/drive/folders/1N1AXRAVnzdhxk0VQctTzuIEdvcF159E2?usp=sharing)
 
