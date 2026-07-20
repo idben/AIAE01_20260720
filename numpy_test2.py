@@ -23,3 +23,12 @@ is_high_scores = scores >= 80
 print(is_high_scores)
 high_scores = scores[is_high_scores] # 需要再用原始 array 對應出結果
 print(high_scores)
+print("-"*30)
+
+prices_test2 = np.array([120, 80, 200, 150, 60])
+discount_prices_test2 = prices_test2 * 0.8
+mask1 = discount_prices_test2 >= 100
+print(discount_prices_test2)
+print(mask1)
+ori_prices_test2 = prices_test2[mask1]
+print(ori_prices_test2)
