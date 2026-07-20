@@ -54,3 +54,49 @@ test1_scores = np.array([
     [64, 79, 85],
     [90, 92, 87],
 ])
+print("-"*30)
+
+# 處理溫度資料
+temperatures = np.array([
+    [28, 22],
+    [30, 23],
+    [31, 24],
+    [29, 21],
+    [33, 25],
+    [35, 27],
+    [32, 26],
+])
+daily_highs = temperatures[: , 0]
+daily_lows = temperatures[: , 1]
+daily_ranges = daily_highs - daily_lows
+
+print(f"每日最高溫: {daily_highs}")
+print(f"每日最低溫: {daily_lows}")
+print(f"每日溫差表: {daily_ranges}")
+
+mask = daily_highs >= 33
+hot_days = temperatures[mask]
+print(mask)
+print(hot_days)
+
+weekdays = np.array([
+    "星期一",
+    "星期二",
+    "星期三",
+    "星期四",
+    "星期五",
+    "星期六",
+    "星期日",
+])
+hot_weekdays = weekdays[mask]
+print(f"本週熱死人的日期是: {hot_weekdays}")
+
+
+# 練習 2
+temperatures = np.array([
+    [27, 21],
+    [29, 22],
+    [34, 26],
+    [36, 28],
+    [31, 24],
+])
