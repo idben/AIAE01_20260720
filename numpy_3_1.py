@@ -24,3 +24,11 @@ for index, student in enumerate(students):
     # .1f 是目前內容顯示到小數點下一位
     # .1f 只能套用在單一數字上
     print(f"{student} 的平均分數是 {st_avgs[index]:.1f}")
+print("-"*30)
+
+# axis=0 以欄(學科)做為計算單位
+subj_avgs = scores.mean(axis=0)
+print(subj_avgs)
+for index, subject in enumerate(subjects):
+    print(f"{subject} 的平均分數是 {subj_avgs[index]:.1f}")
+print("-"*30)
