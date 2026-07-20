@@ -32,3 +32,11 @@ print(discount_prices_test2)
 print(mask1)
 ori_prices_test2 = prices_test2[mask1]
 print(ori_prices_test2)
+print("-"*30)
+
+# day1 下午開始
+# 一維陣列取平均/最高/最低總和
+print(f"平均分數是: {scores.mean()}")
+print(f"最高分是: {scores.max()}")
+print(f"最低分是: {scores.min()}")
+print(f"分數的總和是: {scores.sum()}")
