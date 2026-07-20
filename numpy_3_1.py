@@ -4,9 +4,9 @@ students = ["小安", "小美", "小華", "小杰"]
 subjects = ["國文", "英文", "數學"]
 
 scores = np.array([
-    [80, 90, 75],
+    [80, 90, 58],
     [88, 76, 92],
-    [60, 85, 70],
+    [50, 85, 59],
     [95, 91, 89],
 ])
 
@@ -32,3 +32,20 @@ print(subj_avgs)
 for index, subject in enumerate(subjects):
     print(f"{subject} 的平均分數是 {subj_avgs[index]:.1f}")
 print("-"*30)
+
+# 整張表的最高最低
+print(f"所有人所有學科的最高分: {scores.max()}")
+print(f"所有人所有學科的最低分: {scores.min()}")
+
+faild_mask = scores < 60
+passed_mask = scores >= 60
+faild_scores = scores[faild_mask]
+passed_scores = scores[passed_mask]
+print(faild_scores)
+print(passed_scores)
+# pyhton 的容器通常用 len()
+# NumPy 陣列元素總數通常用 .size
+print(f"被當掉的人數: {faild_scores.size}")
+print(f"通過的人數: {passed_scores.size}")
+
+
