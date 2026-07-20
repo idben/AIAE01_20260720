@@ -27,6 +27,9 @@ def get_lower_score_students(students_data: list, score_limit: int) -> list:
 
     return results
 
+# 練習 3 函式回傳及格人數
+# get_pass_count
+
 def main():
     students = [
         {"姓名": "小安", "分數": 92},
