@@ -29,6 +29,11 @@ print(scores_3.dtype)       # 陣列中的資料形態
 print(f"索引值 0 的資料是 {scores_3[0]}")
 print(f"第三筆的資料是 {scores_3[2]}")
 print(f"最後一科的分數是 {scores_3[-1]}")
+# 切片語法 [::]
+print(scores_3[1:4])
+print(scores_3[:3])
+print(scores_3[2:])
+print(scores_3[::-1])
 print("-"*40)
 
 scores_4 = np.array([
@@ -45,3 +50,6 @@ print(scores_4[0, 0])
 print(f"學生 1 的科目 A 是 {scores_4[0, 0]}")
 print(f"學生 2 的科目 C 是 {scores_4[1, 2]}")
 print(f"學生 4 的科目 B 是 {scores_4[3, 1]}")
+print(scores_4[:2 , :])     # 取出前兩個學生的所有成績
+print(scores_4[: , 0])      # 取出所有學生的 A 科分數
+print(scores_4[: , :2])      # 取出所有學生的 A and B 科分數
