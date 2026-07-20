@@ -48,4 +48,9 @@ print(passed_scores)
 print(f"被當掉的人數: {faild_scores.size}")
 print(f"通過的人數: {passed_scores.size}")
 
-
+# 練習1
+test1_scores = np.array([
+    [72, 88, 91],
+    [64, 79, 85],
+    [90, 92, 87],
+])
