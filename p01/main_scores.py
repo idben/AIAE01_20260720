@@ -34,8 +34,9 @@ def main():
         {"姓名": "小華", "分數": 76},
         {"姓名": "小杰", "分數": 60},
         {"姓名": "小琳", "分數": 98},
+        {"姓名": "小宇", "分數": 88},
     ]
-    lower_score = 80
+    lower_score = 70
 
     avg_score = get_avg_score(students)
     print(f"平均分數是 {avg_score}")
