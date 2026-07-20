@@ -35,8 +35,34 @@ print(ori_prices_test2)
 print("-"*30)
 
 # day1 下午開始
-# 一維陣列取平均/最高/最低總和
+# 一維陣列取平均/最高/最低/總和
 print(f"平均分數是: {scores.mean()}")
 print(f"最高分是: {scores.max()}")
 print(f"最低分是: {scores.min()}")
 print(f"分數的總和是: {scores.sum()}")
+
+# 二維陣列取平均/最高/最低/總和
+scores_ary = np.array([
+    [80, 90, 75],
+    [88, 76, 92],
+    [60, 85, 70],
+    [95, 91, 89],
+])
+# 對各維度的內容做整體的加總及平均
+# 以成績單這樣的範例特性來，似乎較沒意義
+print(f"平均分數是: {scores_ary.mean()}")
+print(f"最高分是: {scores_ary.max()}")
+print(f"最低分是: {scores_ary.min()}")
+print(f"分數的總和是: {scores_ary.sum()}")
+
+st1_avg_score = scores_ary[0].mean().round(1) # .round(1) 小數點下取一位
+print(f"1 號學生的平均分數是: {st1_avg_score}")
+# 使用迴圈印出上面那句
+
+# 算出 A 科的平均分數
+subject_names = ["A", "B", "C"]
+a_avg_score = scores_ary[:, 0].mean()
+# print(f"A 學科的平均分數是: {a_avg_score}")
+
+for index, name in enumerate(subject_names):
+    print(f"{name} 學科的平均分數是: {scores_ary[:, index].mean()}")
